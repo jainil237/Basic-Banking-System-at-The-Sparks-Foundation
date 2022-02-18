@@ -1,13 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.0.3
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Aug 17, 2021 at 06:40 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.34
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -40,8 +30,8 @@ CREATE TABLE `transaction` (
 --
 
 INSERT INTO `transaction` (`sno`, `sender`, `receiver`, `balance`, `datetime`) VALUES
-(17, 'Abhinav', 'Utsav', 50000, '2021-08-16 23:20:49'),
-(18, 'Akriti', 'Suraj', 10, '2021-08-17 00:14:49');
+(1, 'Jainil', 'Jayant', 50000, '2021-08-16 23:20:49'),
+(2, 'Bali', 'Shakti', 10, '2021-08-17 00:14:49');
 
 -- --------------------------------------------------------
 
@@ -61,18 +51,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `balance`) VALUES
-(1, 'Sagar', 'sagar@gmail.com', 7000),
-(2, 'Akriti', 'akriti22@gmail.com', 29990),
-(3, 'Suraj', 'suraj@gmail.com', 40010),
-(4, 'Shubham', 'shubh@gmail.com', 5500),
-(5, 'Siddharth', 'kapoor@gmail.com', 40000),
-(6, 'Nikhil', 'singh@gmail.com', 30000),
-(7, 'Ishika', 'ishikar@gmail.com', 50000),
-(8, 'Vishesh', 'vgr@gmail.com', 40000),
-(9, 'Kshitij', 'rajput@gmail.com', 31000),
-(10, 'Shivaji', 'shiv@gmail.com', 50000),
-(11, 'Utsav', 'utsav@gmail.com', 128985),
-(12, 'Abhinav', 'abhi@yahoo.com', 30015);
+(1, 'Jainil', 'Jainil@gmail.com', 7000),
+(2, 'Jayant', 'Jayant22@gmail.com', 29990),
+(3, 'Bali', 'bali@gmail.com', 40010),
+(4, 'Shakti', 'Shakti@gmail.com', 30015);
 
 --
 -- Indexes for dumped tables
@@ -98,15 +80,16 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `sno` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `sno` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
